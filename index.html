@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DOM greetings exercise</title>
+   <link rel="stylesheet" href="greetings.css">
+  <title>Greetings</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Greetings</h1>
+    </header>
+    <div class="main">
+      <div class="row ">
+        <label for="nameInput">Name:</label>
+        <input class="nameInput" type="text" name="nameInput">
+      </div>
+      <div class="row ">
+        <label for="languageRadio">Language:</label>
+
+        <label for="">
+            <input type="radio" name="languageRadio" value="English">
+            <span>English</span>
+          </label>
+
+        <label for="">
+            <input type="radio" name="languageRadio" value="IsiXhosa">
+            <span>IsiXhosa</span>
+          </label>
+
+        <label for="">
+            <input type="radio" name="languageRadio" value="Te Reo">
+            <span>Te Reo</span>
+          </label>
+      </div>
+
+      <button class="btnGreeting" type="button" name="btnGreeting">Respones</button>
+
+      <div class="row display-section">
+        <div class="greeting-message">
+          Hello, World!
+        </div>
+        <div class="counter">
+          Greetings: 0
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Javascript section -->
+  <script src="greet.js"></script>
+
+</body>
+
+</html>
