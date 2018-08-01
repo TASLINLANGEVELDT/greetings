@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>DOM greetings exercise</title>
-   <link rel="stylesheet" href="greetings.css">
-  <title>Greetings</title>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <h1>Greetings</h1>
-    </header>
-    <div class="main">
-      <div class="row ">
-        <label for="nameInput">Name:</label>
-        <input class="nameInput" type="text" name="nameInput">
+  <head>
+    <meta charset="utf-8">
+    <title>Greetings</title>
+    <link rel="stylesheet" href="css/index-grid.css">
+    <link rel="stylesheet" href="css/greet.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>GREETINGS</h1>
       </div>
-      <div class="row ">
-        <label for="languageRadio">Language:</label>
-
-        <label for="">
-            <input type="radio" name="languageRadio" value="English">
-            <span>English</span>
-          </label>
-
-        <label for="">
-            <input type="radio" name="languageRadio" value="IsiXhosa">
-            <span>IsiXhosa</span>
-          </label>
-
-        <label for="">
-            <input type="radio" name="languageRadio" value="Te Reo">
-            <span>Te Reo</span>
-          </label>
+      <div class="row">
+        <label for="inputName">Please Enter Name</label>
+        <input type="text" name="inputName" value="" class="nameBox">
       </div>
-
-      <button class="btnGreeting" type="button" name="btnGreeting">Respones</button>
-
-      <div class="row display-section">
-        <div class="greeting-message">
-          Hello, World!
-        </div>
-        <div class="counter">
-          Greetings: 0
-        </div>
+      <div class="row">
+        <table>
+          <tr>
+            <td>
+              <input type="radio" name="language" value="english" class="languages">
+            </td>
+            <td>
+              <label for="english">English</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="language" value="sesotho" class="languages">
+            </td>
+            <td>
+              <label for="sesotho">Sesotho</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="language" value="french" class="languages">
+            </td>
+            <td>
+              <label for="french">French</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="row">
+        <button type="button" name="greetMe" class="buttons">Greet Me</button>
+        <output name="alertName" class="alertDisplay"></output>
+        <strong><output class="displayGreeting" name="greetingResult"></output></strong>
+      </div>
+      <div class="row counter">
+        <label for="countResult">Number Of Names Greeted:</label><br>
+        <strong><output class="count" name="countResult" type="number"></output></strong>
+      </div>
+      <div class="row">
+        <button type="button" name="resetBtn" class="buttons">Reset Counter</button>
       </div>
     </div>
-  </div>
-  <!-- Javascript section -->
-  <script src="greet.js"></script>
-
-</body>
-
+    <script src="js/greet.js" charset="utf-8"></script>
+    <script src="js/greet_dom.js" charset="utf-8"></script>
+  </body>
 </html>
